@@ -30,7 +30,13 @@
 					<h1>KAIHAN ZHU</h1>
 					<p>Or, Peter Zhu.</p>
 					<p>Or, 朱恺晗.</p>
-					<script src="http://www.zhukaihan.com/t.js"></script>
+	<script>
+					$(document).ready(function () {
+					  $.getJSON("http://zkh.io:3000", function (data) {
+					        console.log(data);
+						  });
+						  };
+					</script>
 				</header>
 				<footer>
 					<a href="#banner" class="button style2 scrolly scrolly-centered">Go</a>
